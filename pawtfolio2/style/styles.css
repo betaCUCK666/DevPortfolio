@@ -1,0 +1,117 @@
+:root {
+    --mainColor: #eaeaea;
+    --secondaryColor: #fff;
+    --borderColor: #c1c1c1;
+    --mainText: black;
+    --secondaryText: #4b5156;
+    --previewBg: rgb(251, 249, 243, 0.8);
+    --previewShadow: #f0ead6;
+    box-sizing: border-box;
+}
+
+
+/* Body stylin */
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+
+/* Header/logo title */
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #2d5b30;
+    color: white;
+}
+
+
+/* Top navigation bar */
+
+.navbar {
+    display: flex;
+    background-color: #333;
+}
+
+
+/* navgation bar links */
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* unequal columns 30/70 */
+
+
+/* sidebar/left 30 column */
+
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+
+/* Main SHIT */
+
+.headshot {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.IMG2 {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.IMG3 {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* footer */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+.github {
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+
+
+/* RESPONSIVENESS SHIT */
+
+
+/* BEING ABLE TO ADJUST TO SMALLER SCREEN SIZES AND SHIT */
+
+@media screen and (max-width: 700px) {
+    .row,
+    .navbar {
+        flex-direction: column;
+    }
+}
